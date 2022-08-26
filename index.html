@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StableFace: Analyzing and Improving Motion Stability for Talking Face Generation</title>
+    <!-- Bootstrap -->
+    <link href="./files/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="./files/font-awesome.min.css">
+</head>
+
+<!-- cover -->
+
+<body>
+    <section>
+        <div class="jumbotron text-center mt-4">
+            <center>
+            <div class="container">
+                <!-- <div class="row"> -->
+                    <div class="col-12">
+                        <h2><b>StableFace: Analyzing and Improving Motion Stability for Talking Face Generation</b>
+                        </h2>
+                        <!-- <h4 style="color:#5a6268;">Some Conference</h4> -->
+                        <!-- <hr> -->
+                        <h6>
+                            <a href="https://junleen.github.io" target="_blank">Jun Ling</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="https://tan-xu.github.io/" target="_blank">Xu Tan</a><sup>2</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Liyang Chen</a><sup>3</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Runnan Li</a><sup>4</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Yuchao Zhang</a><sup>4</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+
+                            <a href="" target="_blank">Sheng Zhao</a><sup>4</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            <a href="" target="_blank">Li Song</a><sup>1</sup>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        </p>
+                            <sup>1</sup>Shanghai Jiao Tong University
+                            &nbsp;&nbsp;&nbsp;
+                            <sup>2</sup>Microsoft Research Asia
+                            &nbsp;&nbsp;&nbsp;
+                            <sup>3</sup>Zhejiang University
+                            &nbsp;&nbsp;&nbsp;
+                            <sup>4</sup>Tsinghua University
+                    </div>
+                <!-- </div> -->
+            </div>
+        </center>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h3><b>Abstract</b></h3>
+            <!-- <center> -->
+            <div class="row">
+                <p class="text-justify">
+                    While previous speech-driven talking face generation methods have made significant progress in improving the visual quality and lip-sync quality of the synthesized videos, they pay less attention to lip motion jitters which greatly undermine the realness of talking face videos. What causes motion jitters, and how to mitigate the problem? In this paper, we conduct systematic analyses on the motion jittering problem based on a state-of-the-art pipeline that uses 3D face representations to bridge the input audio and output video, and improve the motion stability with a series of effective designs. 
+                    We find that several issues can lead to jitters in synthesized talking face video: 1) jitters from the input 3D face representations; 2) training-inference mismatch; 3) lack of dependency modeling among video frames. 
+                    Accordingly, we propose three effective solutions to address this issue: 1) we propose a gaussian-based adaptive smoothing module to smooth the 3D face representations to eliminate jitters in the input; 2) we add augmented erosions on the input data of the neural renderer in training to simulate the distortion in inference to reduce mismatch; 3) we develop an audio-fused transformer generator to model dependency among video frames. Besides, considering there is no off-the-shelf metric for measuring motion jitters in talking face video, we devise an objective metric (Motion Stability Index, MSI), to quantitatively measure the motion jitters by calculating the reciprocal of variance acceleration. Extensive experimental results show the superiority of our method on motion-stable face video generation, with better quality than previous systems. 
+                    </p>
+            </div>
+        <!-- </center> -->
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3><b>Demo</b></h3>
+            <div class="row">
+                <center>
+                <div class="col-12 text-center">
+                    <video width="712" height="400" src="assets/Supp_video_Fig1.mp4" allowfullscreen controls></video>
+                    <p></p>
+                    <!-- <p class="text-justify"> -->
+                        <!-- Some content here. -->
+                    <!-- </p> -->
+                </div>
+            </center>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <h3><b>Pipeline</b></h3>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="image/framework.png" width="900"></img>
+                </p>
+                    <img src="image/introduction_fig.png" width="900"></img>
+                    <p class="text-justify">
+                        <!-- Some content here. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h3><b>Materials</b></h3>
+            <div class="row">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="" target="_blank">
+                            <image src="image/paper_image.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li>
+                        <a href="https://www.bilibili.com/" target="_blank">
+                            <image src="image/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                        </a>
+                    </li> -->
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li>
+                        <a href="" target="_blank">
+                            <image src="image/GitHub.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    </p>
+    <!-- citing -->
+    <!-- <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <h3><b>Citation</b></h3>
+                <pre style="background-color: #e9eeef;padding: 1.25em 1.5em"><code>@article{yao2022dfa,
+                    title={DFA-NeRF: Personalized Talking Head Generation via Disentangled Face Attributes Neural Rendering},
+    author={Yao, Shunyu and Zhong, RuiZhe and Yan, Yichao and Zhai, Guangtao and Yang, Xiaokang},
+    journal={arXiv preprint arXiv:2201.00791},
+    year={2022}
+}</code></pre>
+                <hr>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+
+</html>
