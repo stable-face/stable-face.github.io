@@ -1,8 +1,6 @@
 # StableFace: Analyzing and Improving Motion Stability for Talking Face Generation
 
-This is the repository that contains source code for the [StableFace](https://stable-face.github.io).
-
-If you find our work useful for your, please cite:
+If you find our work ([StableFace](https://stable-face.github.io)) useful for your, please cite:
 ```
 @article{ling2022stableface,
     title={StableFace: Analyzing and Improving Motion Stability for Talking Face Generation},
